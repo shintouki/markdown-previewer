@@ -1,0 +1,22 @@
+#outerMain {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#input-window {
+  margin-right: 15px;
+}
+
+#preview-window {
+  margin-left: 15px;
+}
+
+#title,
+#profileLink {
+  text-align: center;
+}
+
+#preview-window {
+  float: right;
+}
