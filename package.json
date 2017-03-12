@@ -1,0 +1,25 @@
+{
+  "name": "markdown_previewer",
+  "version": "1.0.0",
+  "description": "Markdown Previewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shintouki/markdown-previewer.git"
+  },
+  "author": "Ted <tdyshin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shintouki/markdown-previewer/issues"
+  },
+  "homepage": "https://github.com/shintouki/markdown-previewer#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0"
+  }
+}

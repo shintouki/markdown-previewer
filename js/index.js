@@ -1,9 +1,6 @@
-"use strict";
-
 var Child = React.createClass({
-  displayName: "Child",
 
-  handleChange: function handleChange() {
+  handleChange: function () {
     var input = document.getElementById('input-window').value;
     var preview = marked(input);
 
@@ -13,8 +10,8 @@ var Child = React.createClass({
     this.props.onChange(preview);
   },
 
-  render: function render() {
-    var startingInput = ["This is a heading", "==", "This is a sub-heading", "--", "", "### This symbol is another way to create headers", "", "Try different amounts of #", "", "Paragraphs are separated", "by a blank line.", "", "To get a line break, put two spaces at the end of line.", "Like this  ", "You can also create lists  ", "", "List:  ", "  * a", "  * b", "  * c", "", "*italic* **bold** 'monospace' ~~strikethrough~~  ", "", "By *[Ted](https://github.com/shintouki)*"].join("\n");
+  render: function () {
+    var startingInput = ["This is a heading", "==", "This is a sub-heading", "--", "", "### This symbol is another way to create headers", "", "Try different amounts of #", "", "Paragraphs are separated", "by a blank line.", "", "To get a line break, put two spaces at the end of line.", "Like this  ", "You can also create lists  ", "", "List:  ", "  * a", "  * b", "  * c", "", "*italic* **bold** 'monospace' ~~strikethrough~~  ", "", "By *[Ted](https://github.com/tshin1)*"].join("\n");
 
     return React.createElement(
       "div",
@@ -36,21 +33,20 @@ var Child = React.createClass({
 });
 
 var Parent = React.createClass({
-  displayName: "Parent",
 
-  getInitialState: function getInitialState() {
+  getInitialState: function () {
     return {
       currentPreview: ""
     };
   },
 
-  changePreview: function changePreview(newPreview) {
+  changePreview: function (newPreview) {
     this.setState({
       currentPreview: newPreview
     });
   },
 
-  render: function render() {
+  render: function () {
     return React.createElement(Child, {
       currentPreview: this.state.currentPreview,
       onChange: this.changePreview });

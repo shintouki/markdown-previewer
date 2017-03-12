@@ -35,7 +35,7 @@ var Child = React.createClass({
       "",
       "*italic* **bold** 'monospace' ~~strikethrough~~  ",
       "",
-      "By *[Ted](https://github.com/shintouki)*"
+      "By *[Ted](https://github.com/tshin1)*"
 
     ].join("\n");
 
