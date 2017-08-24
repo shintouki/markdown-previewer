@@ -11,7 +11,7 @@ var Child = React.createClass({
   },
 
   render: function () {
-    var startingInput = ["This is a heading", "==", "This is a sub-heading", "--", "", "### This symbol is another way to create headers", "", "Try different amounts of #", "", "Paragraphs are separated", "by a blank line.", "", "To get a line break, put two spaces at the end of line.", "Like this  ", "You can also create lists  ", "", "List:  ", "  * a", "  * b", "  * c", "", "*italic* **bold** 'monospace' ~~strikethrough~~  ", "", "By *[Ted](https://github.com/tshin1)*"].join("\n");
+    var startingInput = ["This is a heading", "==", "This is a sub-heading", "--", "", "### This symbol is another way to create headers", "", "Try different amounts of #", "", "Paragraphs are separated", "by a blank line.", "", "To get a line break, put two spaces at the end of line.", "Like this  ", "You can also create lists  ", "", "List:  ", "  * a", "  * b", "  * c", "", "*italic* **bold** 'monospace' ~~strikethrough~~  ", "", "By *[Ted](https://github.com/tshin7)*"].join("\n");
 
     return React.createElement(
       "div",
